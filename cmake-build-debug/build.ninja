@@ -55,41 +55,41 @@ build CMakeFiles/LeetCode.dir/main.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gu
   OBJECT_DIR = CMakeFiles/LeetCode.dir
   OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir
 
-build CMakeFiles/LeetCode.dir/Arrays101/1089_duplicateZeros.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/Arrays101/1089_duplicateZeros.cpp || cmake_object_order_depends_target_LeetCode
-  DEP_FILE = CMakeFiles/LeetCode.dir/Arrays101/1089_duplicateZeros.cpp.o.d
+build CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/1089_duplicateZeros.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ProblemsSolved/Arrays101/1089_duplicateZeros.cpp || cmake_object_order_depends_target_LeetCode
+  DEP_FILE = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/1089_duplicateZeros.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/LeetCode.dir
-  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/Arrays101
+  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101
 
-build CMakeFiles/LeetCode.dir/Arrays101/283_moveZeroes.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/Arrays101/283_moveZeroes.cpp || cmake_object_order_depends_target_LeetCode
-  DEP_FILE = CMakeFiles/LeetCode.dir/Arrays101/283_moveZeroes.cpp.o.d
+build CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/283_moveZeroes.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ProblemsSolved/Arrays101/283_moveZeroes.cpp || cmake_object_order_depends_target_LeetCode
+  DEP_FILE = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/283_moveZeroes.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/LeetCode.dir
-  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/Arrays101
+  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101
 
-build CMakeFiles/LeetCode.dir/Arrays101/88_mergeSortedArray.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/Arrays101/88_mergeSortedArray.cpp || cmake_object_order_depends_target_LeetCode
-  DEP_FILE = CMakeFiles/LeetCode.dir/Arrays101/88_mergeSortedArray.cpp.o.d
+build CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/88_mergeSortedArray.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ProblemsSolved/Arrays101/88_mergeSortedArray.cpp || cmake_object_order_depends_target_LeetCode
+  DEP_FILE = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/88_mergeSortedArray.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/LeetCode.dir
-  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/Arrays101
+  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101
 
-build CMakeFiles/LeetCode.dir/Arrays101/977_squaresOfASortedArray.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/Arrays101/977_squaresOfASortedArray.cpp || cmake_object_order_depends_target_LeetCode
-  DEP_FILE = CMakeFiles/LeetCode.dir/Arrays101/977_squaresOfASortedArray.cpp.o.d
+build CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/977_squaresOfASortedArray.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ProblemsSolved/Arrays101/977_squaresOfASortedArray.cpp || cmake_object_order_depends_target_LeetCode
+  DEP_FILE = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/977_squaresOfASortedArray.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/LeetCode.dir
-  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/Arrays101
+  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101
 
-build CMakeFiles/LeetCode.dir/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp || cmake_object_order_depends_target_LeetCode
-  DEP_FILE = CMakeFiles/LeetCode.dir/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp.o.d
+build CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ProblemsSolved/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp || cmake_object_order_depends_target_LeetCode
+  DEP_FILE = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/LeetCode.dir
-  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/Arrays101
+  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101
 
-build CMakeFiles/LeetCode.dir/ArraysAndString/498_diagonalTraverse.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ArraysAndString/498_diagonalTraverse.cpp || cmake_object_order_depends_target_LeetCode
-  DEP_FILE = CMakeFiles/LeetCode.dir/ArraysAndString/498_diagonalTraverse.cpp.o.d
+build CMakeFiles/LeetCode.dir/ProblemsSolved/ArraysAndString/498_diagonalTraverse.cpp.o: CXX_COMPILER__LeetCode_Debug /Users/gunwookim/CLionProjects/LeetCode/ProblemsSolved/ArraysAndString/498_diagonalTraverse.cpp || cmake_object_order_depends_target_LeetCode
+  DEP_FILE = CMakeFiles/LeetCode.dir/ProblemsSolved/ArraysAndString/498_diagonalTraverse.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/LeetCode.dir
-  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ArraysAndString
+  OBJECT_FILE_DIR = CMakeFiles/LeetCode.dir/ProblemsSolved/ArraysAndString
 
 
 # =============================================================================
@@ -99,7 +99,7 @@ build CMakeFiles/LeetCode.dir/ArraysAndString/498_diagonalTraverse.cpp.o: CXX_CO
 #############################################
 # Link the executable LeetCode
 
-build LeetCode: CXX_EXECUTABLE_LINKER__LeetCode_Debug CMakeFiles/LeetCode.dir/main.cpp.o CMakeFiles/LeetCode.dir/Arrays101/1089_duplicateZeros.cpp.o CMakeFiles/LeetCode.dir/Arrays101/283_moveZeroes.cpp.o CMakeFiles/LeetCode.dir/Arrays101/88_mergeSortedArray.cpp.o CMakeFiles/LeetCode.dir/Arrays101/977_squaresOfASortedArray.cpp.o CMakeFiles/LeetCode.dir/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp.o CMakeFiles/LeetCode.dir/ArraysAndString/498_diagonalTraverse.cpp.o
+build LeetCode: CXX_EXECUTABLE_LINKER__LeetCode_Debug CMakeFiles/LeetCode.dir/main.cpp.o CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/1089_duplicateZeros.cpp.o CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/283_moveZeroes.cpp.o CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/88_mergeSortedArray.cpp.o CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/977_squaresOfASortedArray.cpp.o CMakeFiles/LeetCode.dir/ProblemsSolved/Arrays101/448_findAllNumbersDisappearedInAnArray.cpp.o CMakeFiles/LeetCode.dir/ProblemsSolved/ArraysAndString/498_diagonalTraverse.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk
   OBJECT_DIR = CMakeFiles/LeetCode.dir
   POST_BUILD = :
