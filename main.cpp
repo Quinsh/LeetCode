@@ -7,5 +7,8 @@ using namespace std;
 int findPeakElement(vector<int>& nums);
 
 int main() {
-    cout << double(5)/2 << endl;
+    string s = "hello";
+    for (auto c : s){
+        cout << 'a' - 'b' << endl;
+    }
 }

@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-vector<int> twoSum(vector<int>& numbers, int target) {
+vector<int> twoSumII(vector<int>& numbers, int target) {
     // we can iterate l from 0 to end;
     // for each iteration on l, we just need to see if num[l] + num[r] is less than target,
     // because if it is, we don't need to sum num[l] with other numbers at right (since the array is sorted)
