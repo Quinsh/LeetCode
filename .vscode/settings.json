@@ -2,6 +2,15 @@
     "files.associations": {
         "vector": "cpp",
         "iosfwd": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "string_view": "cpp",
+        "unordered_set": "cpp",
+        "stack": "cpp"
     }
 }
