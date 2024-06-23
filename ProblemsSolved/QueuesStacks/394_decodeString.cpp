@@ -23,7 +23,7 @@ using namespace std;
  * 
  * TOIMPROVE: 
 */
-class Solution {
+class Solution394 {
 public:
     string decodeString(string s) {
         string ans;
