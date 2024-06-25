@@ -1,5 +1,5 @@
 # LeetCode
-**solutions for probably? `65` problems.**  
+**solutions for probably? `69` problems.**  
 
 _go to "ProblemsSolved" file to see the solutions._
 
