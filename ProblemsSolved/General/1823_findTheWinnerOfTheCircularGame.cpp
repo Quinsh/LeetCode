@@ -26,27 +26,29 @@ const int INF = 1e9;
 const int MOD = 1e9 + 7;
 
 /**
- * DATE: 2024.07.06
- * INTUITION: swap the nodes recursively (swap the first 2, and merge with the recursive result)
+ * DATE: 2024.07.08
+ * INTUITION: enqueue everything, then while there are >= 1 in the queue, pop for k-1 times and put it back to the queue. pop the kth one. continue.
  * 
- * TC: O(N) - linear processing
- * SC: O(N) - recursion stack space
+ * TC: O(N*K)
+ * SC: O(N)
  * 
- * TOIMPROVE: 
+ * TOIMPROVE: reduce time complexity to O(N) or O(1).
  */
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
-        // base case
-        if (head == nullptr) return head;
-        if (head->next == nullptr) return head;
+    int findTheWinner(int n, int k) {
+        queue<int> q;
+        for (int i = 1; i <= n; i++) {
+            q.push(i);
+        }
 
-        // swap the first two
-        ListNode *nextRec = head->next->next;
-        ListNode *second = head->next;
-        second->next = head;
-        head = second;
-        head->next->next = swapPairs(nextRec);
-        return head;
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < k-1; j++) {
+                q.push(q.front()); q.pop();
+            }
+            q.pop();
+        }
+
+        return q.front();
     }
 };

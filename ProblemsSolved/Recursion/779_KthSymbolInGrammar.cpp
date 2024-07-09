@@ -27,26 +27,26 @@ const int MOD = 1e9 + 7;
 
 /**
  * DATE: 2024.07.06
- * INTUITION: swap the nodes recursively (swap the first 2, and merge with the recursive result)
+ * INTUITION: we can recurse like pascal triangle recursion. easy.
  * 
- * TC: O(N) - linear processing
- * SC: O(N) - recursion stack space
+ * TC: O(n) - we recurse n times
+ * SC: O(n) - O(1) for each recursion * n, the maximum recursion depth
  * 
  * TOIMPROVE: 
  */
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
-        // base case
-        if (head == nullptr) return head;
-        if (head->next == nullptr) return head;
+    int kthGrammar(int n, int k) {
+        if (n == 1) return 0;
 
-        // swap the first two
-        ListNode *nextRec = head->next->next;
-        ListNode *second = head->next;
-        second->next = head;
-        head = second;
-        head->next->next = swapPairs(nextRec);
-        return head;
+        int prev = kthGrammar(n-1, (k+1)/2);
+        if (prev == 0) {
+            if (k & 1) return 0;
+            else return 1;
+        }
+        else {
+            if (k & 1) return 1;
+            else return 0;
+        }
     }
 };

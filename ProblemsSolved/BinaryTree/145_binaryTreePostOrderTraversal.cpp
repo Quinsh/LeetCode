@@ -27,26 +27,34 @@ const int MOD = 1e9 + 7;
 
 /**
  * DATE: 2024.07.06
- * INTUITION: swap the nodes recursively (swap the first 2, and merge with the recursive result)
+ * INTUITION:
  * 
- * TC: O(N) - linear processing
- * SC: O(N) - recursion stack space
+ * TC: O(N)
+ * SC: O(N)
  * 
  * TOIMPROVE: 
  */
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
-        // base case
-        if (head == nullptr) return head;
-        if (head->next == nullptr) return head;
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> ans = {};
+        helper(root, ans);
+        return ans;
+    }
 
-        // swap the first two
-        ListNode *nextRec = head->next->next;
-        ListNode *second = head->next;
-        second->next = head;
-        head = second;
-        head->next->next = swapPairs(nextRec);
-        return head;
+    void helper(TreeNode *root, vector<int>& ans) {
+        if (!root) return;
+
+        helper(root->left, ans);
+        helper(root->right, ans);
+        ans.push_back(root->val);
+    }
+};
+
+// now the harder iterative approach
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        
     }
 };

@@ -27,26 +27,17 @@ const int MOD = 1e9 + 7;
 
 /**
  * DATE: 2024.07.06
- * INTUITION: swap the nodes recursively (swap the first 2, and merge with the recursive result)
+ * INTUITION: max depth btw the child tree + 1
  * 
- * TC: O(N) - linear processing
- * SC: O(N) - recursion stack space
+ * TC: O(N) - total nodes in the tree
+ * SC: O(D) - O(1) SC is used for each recursion, and there are at most O(D) recursions.
  * 
  * TOIMPROVE: 
  */
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
-        // base case
-        if (head == nullptr) return head;
-        if (head->next == nullptr) return head;
-
-        // swap the first two
-        ListNode *nextRec = head->next->next;
-        ListNode *second = head->next;
-        second->next = head;
-        head = second;
-        head->next->next = swapPairs(nextRec);
-        return head;
+    int maxDepth(TreeNode* root) {
+        if (!root) return 0;
+        return 1 + max(maxDepth(root->left), maxDepth(root->right));
     }
 };

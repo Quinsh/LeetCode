@@ -27,26 +27,24 @@ const int MOD = 1e9 + 7;
 
 /**
  * DATE: 2024.07.06
- * INTUITION: swap the nodes recursively (swap the first 2, and merge with the recursive result)
+ * INTUITION: 
  * 
- * TC: O(N) - linear processing
- * SC: O(N) - recursion stack space
+ * TC: O(N)
+ * SC: O(N)
  * 
  * TOIMPROVE: 
  */
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
-        // base case
-        if (head == nullptr) return head;
-        if (head->next == nullptr) return head;
+    ListNode* reverseList(ListNode* head) {
+        if (!(head->next)) return head;
+        
+        // reucrsive case:
+        ListNode *nextnode = head->next;
+        ListNode *newhead = reverseList(nextnode);
+        nextnode->next = head;
+        head->next = nullptr;
 
-        // swap the first two
-        ListNode *nextRec = head->next->next;
-        ListNode *second = head->next;
-        second->next = head;
-        head = second;
-        head->next->next = swapPairs(nextRec);
-        return head;
+        return newhead;
     }
 };

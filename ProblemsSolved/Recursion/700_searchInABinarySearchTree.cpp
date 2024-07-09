@@ -27,26 +27,20 @@ const int MOD = 1e9 + 7;
 
 /**
  * DATE: 2024.07.06
- * INTUITION: swap the nodes recursively (swap the first 2, and merge with the recursive result)
+ * INTUITION: if root->val is val, return that, else search recursively. 
  * 
- * TC: O(N) - linear processing
- * SC: O(N) - recursion stack space
+ * TC: O(D) - depth of the tree (since the tree can be unbalanced)
+ * SC: O(D) - recursed up to the depth of the tree.
  * 
  * TOIMPROVE: 
  */
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
-        // base case
-        if (head == nullptr) return head;
-        if (head->next == nullptr) return head;
+    TreeNode* searchBST(TreeNode* root, int val) {
+        if (!root) return root;
+        if (root->val == val) return root;
 
-        // swap the first two
-        ListNode *nextRec = head->next->next;
-        ListNode *second = head->next;
-        second->next = head;
-        head = second;
-        head->next->next = swapPairs(nextRec);
-        return head;
+        if (root->val < val) return searchBST(root->right, val);
+        else return searchBST(root->left, val);
     }
 };
