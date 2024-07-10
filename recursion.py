@@ -202,3 +202,61 @@
 #     return label(t) + Max
 
 
+
+# def minimum_mewtations(typed, source, limit):
+#     # BASE CASES
+#     if typed == source: return 0
+#     if not limit: return 1
+
+#     if not typed: return len(source)
+#     if not source: return len(typed)
+    
+#     # RECURSIVE CASE
+#     # if the first char is equal, just check the remaining
+#     if typed[0] == source[0]:
+#         return minimum_mewtations(typed[1:], source[1:], limit)
+
+#     # else, 
+#     return 1 + min(minimum_mewtations(typed, source[1:], limit - 1),
+#                     minimum_mewtations(typed[1:], source, limit - 1),
+#                     minimum_mewtations(typed[1:], source[1:], limit - 1))
+
+
+# print(minimum_mewtations("ckiteusabcdefghijklm", "kittensnopqrstuvwxyz", 2) > 2)
+
+
+
+
+# def partial_reverse(s, start):
+#     l = start; r = len(s)-1
+#     while (l < r):
+#         s[l], s[r] = s[r], s[l]
+#         l += 1; r -= 1
+
+# a = [1, 2, 3, 4, 5, 6, 7]
+# partial_reverse(a, 2)
+# partial_reverse(a, 5)
+# print(a)
+
+
+# def group_by(s, fn):
+#     grouped = {}
+#     for item in s:
+#         key = fn(item)
+#         if key in grouped:
+#             grouped[key].append(item)
+#         else:
+#             grouped[key] = [item]
+#     return grouped
+
+
+# def distance(city_a, city_b):
+#     x1 = get_lat(city_a); x2 = get_lat(city_b)
+#     y1 = get_lon(city_a); y2 = get_lon(city_b)
+#     return sqrt((x1 - x2)**2 + (y1 - y2)**2)
+
+
+# def closer_city(lat, lon, city_a, city_b):
+#     pos = make_city('pos', lat, lon)
+#     return city_a if distance(city_a, pos) < distance(city_b, pos) else city_b
+
