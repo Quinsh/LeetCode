@@ -8,6 +8,8 @@
         "deque": "cpp",
         "string": "cpp",
         "ios": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }

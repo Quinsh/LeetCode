@@ -29,8 +29,8 @@ const int MOD = 1e9 + 7;
  * DATE: 2024.07.10
  * INTUITION: solve recursively
  * 
- * TC: O(N^2) - it does a O(N) search each recursion, and there are O(N) recursions
- * SC: O(1)
+ * TC: O(NlogN) for average balanced tree case, O(n^2) for worst case
+ * SC: O(H) for height of the tree
  * 
  * TOIMPROVE: 
  */
