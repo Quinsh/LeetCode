@@ -30,17 +30,38 @@ const int MOD = 1e9 + 7;
  * DATE: 2024.07.21
  * INTUITION:
  * 
- * TC:
- * SC: 
+ * TC: O(N) - for number of rooms
+ * SC: O(N) - set used & also the recursion stack in the worst case
  * 
  * TOIMPROVE: 
  */
 class Solution {
 private:
-    unordered_set<int, int> visited;
+    set<pair<int, int>> visited;
+    vector<pair<int, int>> directions = {{0,1}, {1,0}, {0,-1}, {-1,0}};
 public:
     void cleanRoom(Robot& robot) {
-        if () return;
+        clean(robot, 0, 0, 0);
+    }
+
+    void clean(Robot &robot, int x, int y, int d) {
+        robot.clean();
+        visited.insert({x, y});
+        for(int i=0; i<4; i++) {
+            int new_d = (d+i)%4;
+            int new_x = x+directions[new_d].first, new_y = y+directions[new_d].second;
+            if (visited.count({new_x, new_y}) <= 0 && robot.move()) {
+                clean(robot, new_x, new_y, new_d);
+                goBack(robot);
+            }
+            robot.turnRight();
+        }
+    }
+
+    void goBack(Robot &robot) {
+        robot.turnLeft(); robot.turnLeft();
+        robot.move();
+        robot.turnLeft(); robot.turnLeft();
     }
 };
 
