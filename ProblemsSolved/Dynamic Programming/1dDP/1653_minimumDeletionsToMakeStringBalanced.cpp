@@ -28,13 +28,32 @@ const int MOD = 1e9 + 7;
 
 /**
  * DATE: 2024.07.31
- * INTUITION: 
+ * INTUITION: 1d dp.
  * 
- * TC: 
- * SC: 
+ * TC: O(N)
+ * SC: O(N)
  * 
  * TOIMPROVE: 
  */
+class Solution {
+
+public:
+    int minimumDeletions(string s) {
+        int b_count = 0;
+        vector<int> dp(s.size()+1);
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == 'a') {
+                dp[i+1] = min(1+dp[i], b_count);
+            }
+            else {
+                dp[i+1] = dp[i];
+                b_count++;
+            }
+        }
+        return dp[s.size()];
+    }
+};
+
 
 // my 2d DP solution that works for string of all characters not only for 'a' and 'b'.
 // but it's giving Memory Limit Exceeded...
