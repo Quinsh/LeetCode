@@ -1,6 +1,6 @@
 # LeetCode
-**solutions for probably? `160` problems.**
-**solved `216` problems**
+**solutions for probably? `161` problems.**
+**solved `220` problems**
 
 _go to "ProblemsSolved" file to see the solutions._
 
